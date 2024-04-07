@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Login from './pages/Login.jsx';
 
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App/>,
   },
+  {
+    path: "/log-in",
+    element: <Login/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
