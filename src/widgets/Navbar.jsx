@@ -1,17 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './pagewidget.module.css'
 
 function Navbar() {
   return (
-    <div>
-        <h1>For you, By Me</h1>
+    <header className={styles.headernav}>
+        <div>
+          <h1>For you, By Me</h1>
+        </div>
         <nav>
-            <ul>
-                <li><Link to={"/"}>Home</Link></li>
-                
-            </ul>
+          <ul>
+            <li><img src="" alt="" /></li>
+            <li><img src="" alt="" /></li>
+            <li><Link >About me</Link></li>
+          </ul>
         </nav>
-    </div>
+
+    </header>
   )
 }
 
